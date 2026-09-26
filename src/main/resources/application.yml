@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/vemproracha
+    username: ${DB_USERNAME:vemproracha}
+    password: ${DB_PASSWORD:vemproracha}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false

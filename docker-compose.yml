@@ -1,0 +1,16 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: vemproracha-db
+    environment:
+      MYSQL_DATABASE: vemproracha
+      MYSQL_USER: vemproracha
+      MYSQL_PASSWORD: vemproracha
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysqldata:/var/lib/mysql
+
+volumes:
+  mysqldata:
